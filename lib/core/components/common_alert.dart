@@ -6,8 +6,8 @@ class CommonAlert {
       title: "GeeksforGeeks",
       middleText: "Hello world!",
       backgroundColor: Colors.green,
-      titleStyle: TextStyle(color: Colors.white),
-      middleTextStyle: TextStyle(color: Colors.white),
+      titleStyle: const TextStyle(color: Colors.white),
+      middleTextStyle: const TextStyle(color: Colors.white),
     );
   }
 }

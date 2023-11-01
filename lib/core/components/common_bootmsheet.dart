@@ -6,7 +6,7 @@ class CommonBottomsheet {
       persistent: true,
       isDismissible: true,
       Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
@@ -21,7 +21,7 @@ class CommonBottomsheet {
               Text('Hii 4', textScaleFactor: 2),
             ],
           )),
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20),
           topRight: Radius.circular(20),

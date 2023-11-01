@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
 // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -17,18 +19,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: First(),
+      home: const First(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class First extends StatelessWidget {
+  const First({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("example of get x"),
+        title: const Text("example of get x"),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -55,11 +59,13 @@ class First extends StatelessWidget {
 }
 
 class Second extends StatelessWidget {
+  const Second({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("example of get x 2"),
+        title: const Text("example of get x 2"),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -93,11 +99,13 @@ class Second extends StatelessWidget {
 }
 
 class Third extends StatelessWidget {
+  const Third({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("example simple management"),
+        title: const Text("example simple management"),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -105,15 +113,3 @@ class Third extends StatelessWidget {
     );
   }
 }
-
-
-
-
-// Get.defaultDialog(
-//               title: "GeeksforGeeks",
-//               middleText: "Hello world!",
-//               backgroundColor: Colors.green,
-//               titleStyle: TextStyle(color: Colors.white),
-//               middleTextStyle: TextStyle(color: Colors.white),
-
-//             );
