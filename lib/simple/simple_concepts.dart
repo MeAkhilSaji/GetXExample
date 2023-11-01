@@ -7,8 +7,6 @@ class SimpleStateManagement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    getxControllers controller = Get.put(getxControllers());
-
     return GetBuilder<getxControllers>(
       builder: (controller) {
         return Column(
